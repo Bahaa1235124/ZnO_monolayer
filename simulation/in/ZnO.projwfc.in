@@ -1,0 +1,9 @@
+&PROJWFC
+    prefix      = 'ZnO'
+    outdir      = './out/files/'
+    degauss     = 0.002
+    Emin        = -7.0
+    Emax        = 1.0
+    DeltaE      = 0.003
+    filpdos     = 'data/dos/ZnO/ZnO.projwfc.dat'
+/

@@ -1,0 +1,6 @@
+&BANDS
+    prefix      = 'ZnO'
+    outdir      = './out/files/'
+    filband     = 'data/bands/ZnO_down.bands.dat'
+    spin_component = 2
+/

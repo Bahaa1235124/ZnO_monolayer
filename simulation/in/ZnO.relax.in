@@ -1,0 +1,79 @@
+&CONTROL
+  calculation = 'relax'
+  outdir = './out/relax/'
+  prefix = 'ZnO'
+  pseudo_dir = '../pseudo/'
+  etot_conv_thr = 1.0D-4
+  forc_conv_thr = 1.0D-3
+/
+
+&SYSTEM
+  ibrav = 0
+  nat = 18
+  nosym = .false.
+  ntyp = 2
+  occupations = 'smearing'
+  smearing = 'gaussian'
+  degauss =   0.002
+  ecutrho =   600
+  ecutwfc =   60
+  nspin=2
+  starting_magnetization(1)=-0.5
+  starting_magnetization(2)=0.5
+  input_dft = 'vdW-DF2'
+/
+
+&ELECTRONS
+    conv_thr = 1.0D-9
+    mixing_beta = 0.3
+    electron_maxstep=1000
+!    startingpot = 'file'
+/
+
+&IONS
+  ion_dynamics = 'bfgs'
+  upscale=1000
+/
+
+&CELL
+    cell_dynamics = 'bfgs'
+    press_conv_thr = 0.01
+/
+
+ATOMIC_SPECIES
+O      15.9994 O.pbe-n-kjpaw_psl.0.1.UPF
+Zn     65.38 Zn.pbe-dnl-kjpaw_psl.1.0.0.UPF 
+
+ATOMIC_POSITIONS (angstrom)
+Zn          -0.0000000000    1.9000008590    5.0000000000
+O            1.6454490180    0.9500004290    5.0000000000
+Zn          -1.6454490340    4.7500021750    5.0000000000
+O           -0.0000000160    3.8000017450    5.0000000000
+Zn          -3.2908980680    7.6000034910    5.0000000000
+O           -1.6454490500    6.6500030610    5.0000000000
+Zn           3.2908980690    1.9000008590    5.0000000000
+O            4.9363470870    0.9500004290    5.0000000000
+Zn           1.6454490350    4.7500021750    5.0000000000
+O            3.2908980530    3.8000017450    5.0000000000
+Zn           0.0000000010    7.6000034910    5.0000000000
+O            1.6454490190    6.6500030610    5.0000000000
+Zn           6.5817961380    1.9000008590    5.0000000000
+O            8.2272451560    0.9500004290    5.0000000000
+Zn           4.9363471040    4.7500021750    5.0000000000
+O            6.5817961220    3.8000017450    5.0000000000
+Zn           3.2908980700    7.6000034910    5.0000000000
+O            4.9363470880    6.6500030610    5.0000000000
+
+
+CELL_PARAMETERS (angstrom) 
+   9.8726942062873470   0.000000000000000   0.00000000
+  -4.9363471031436740   8.550003949077680   0.00000000
+   0.0000000000000000   0.000000000000000   22.00000000   
+
+K_POINTS automatic
+1 1 1  0 0 0
+
+HUBBARD (ortho atomic)
+U Zn-3d 10.0
+U O-2p 7.0
+
