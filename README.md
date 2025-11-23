@@ -14,7 +14,7 @@ Moreover, understanding the monolayer geometry and electronic structure will ind
 
 ## Simulation
 
-The calculation had been done using Quantum Espresso software. Firstly, the relax calculation had been done using the command (pw.x) with the input file (./simulation/ZnO.relax.in). Then, the self consistence field calculations had been done using command (pw.x) with the input file (./simulation/ZnO.scf.in). After that, the band calculation had been done using the same command (pw.x) with the input file (./simulation/ZnO.bands.in). Finally, the post process calculations had been done to find the band structure (command bands.x and input file ./simulation/ZnO_up.bands.in and ./simulation/ZnO_down.bands.in) and the projected density of state (command projwfc.x and input file ./simulation/ZnO.projwfc.in). Where the pseudopotential files used are shown in the directory (./simulation/pseudo/).
+The calculation had been done using Quantum Espresso software. Firstly, the relax calculation for the stable structure had been done using the command (pw.x) with the input file (./simulation/ZnO.relax.in). Then, the self consistence field calculations had been done using command (pw.x) with the input file (./simulation/ZnO.scf.in). After that, the band calculation had been done using the same command (pw.x) with the input file (./simulation/ZnO.bands.in). Finally, the post process calculations had been done to find the band structure (command bands.x and input file ./simulation/ZnO_up.bands.in and ./simulation/ZnO_down.bands.in) and the projected density of state (command projwfc.x and input file ./simulation/ZnO.projwfc.in). Where the pseudopotential files used are shown in the directory (./simulation/pseudo/).
 
 ## Paper
 
