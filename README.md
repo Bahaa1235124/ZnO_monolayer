@@ -2,12 +2,12 @@
 
 ## Description
 
-\ce{ZnO} 2D monolayer had been simulated using density functional theory (DFT). 
+ZnO 2D monolayer had been simulated using density functional theory (DFT). 
 Several properties had been evaluated for the monolayer such as the monolayer geometry, the band structure and band gap and the density of states.
 The results are important for understanding the physical properties of the monolayer and for the development of new materials.
-For instance, the \ce{ZnO} is widely used as a gas sensor.
+For instance, the ZnO is widely used as a gas sensor.
 It can be used as a thin film, nanotube, or a one layer that will be added on another material thin film.
-The \ce{ZnO} monolayer that had been studied in this article will give a good results for both of the nanotube and the layer on another material.
+The ZnO monolayer that had been studied in this article will give a good results for both of the nanotube and the layer on another material.
 Where the monolayer is good approximation for a large nanotube.
 Moreover, understanding the monolayer geometry and electronic structure will indicate its ability to be added on another material based on the material stable geometry and electronic structure. 
 
